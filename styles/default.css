@@ -102,3 +102,7 @@ img {
     display: block;
     text-align: right;
 }
+#contract-button {
+    color: #050505;
+    font-size: 80%;
+}

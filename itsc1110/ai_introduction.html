@@ -18,18 +18,71 @@
 <body>
     <header>
         <a id="back-to-links" href="../index.html"> Back to Student Site</a>
-        <a target= "_blank" href="contract.html"><img id="contract-pic" src="../Images/gavel.webp" width="200"></a>
+        <button id="contract-button">
+            <a target= "_blank" href="contract.html">Contract</a>
+        </button>
         <h1>Chris McFarland's<br>Courageous Mink | ITSC 1110</h1>
-        <nav class="menu"><a  href="index.html">Home | </a><a href="introduction.html">Introduction | </a><a href="ai_introduction.html">AI Intro</a></nav>
+        <nav class="menu"><a  href="index.html">Home    </a><a href="introduction.html">Introduction    </a><a href="ai_introduction.html">AI Intro</a></nav>
     </header>
     <main>
-        <h2><br>AI Introduction</h2>
-        <p><br>Hi everyone! I’m joining this course with a background in accounting, but I’ve decided to step away from the spreadsheets to explore the 'why' 
-            and 'how' behind the systems that keep modern businesses running. My goal is to bridge the gap between financial principles and IT infrastructure 
-            to better understand how technology drives corporate efficiency. When I’m not diving into course modules, you can usually find me outdoors, staying
-            active with sports, or just catching up with friends. I’m a big fan of collaborative learning and love meeting new people, so I’m looking forward 
-            to connecting with all of you as we navigate the world of computer science together!</p>
-    </main>
+  <h3 style="text-align: center;">Chris McFarland | Courageous Mink</h3>
+
+  <section style="text-align: center;">
+    <img id="personal-image-items" src="../Images/photo_of_me.png" alt="Chris McFarland and Sir Purr" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
+    <p><em>Me and Sir Purr trying to will the Panthers to a playoff victory last week</em></p>
+  </section>
+
+  <section>
+    <p>
+      I am a senior at UNCC, majoring in accounting, and looking forward to starting a one-year Master's of Accountancy degree in the spring. Some activities I enjoy include playing tennis and football, doing yardwork, and whatever phase I am currently going through (right now it’s chess). Most importantly, even though I’m a pretty Type-A person, I love being silly and making people laugh.
+    </p>
+
+    <ul>
+      <li><strong>Personal Background:</strong> I grew up in Charlotte with my twin brother (fraternal) and my big sister. As a kid, I was heavily involved in junior tennis. Some of my favorite memories include the family vacations to the beach and sledding in the snow (when we used to get snow).</li>
+      
+      <li><strong>Professional Background:</strong> I’ve worked part-time at a grocery store for 4.5 years. While gaining an education, I found a love for accounting and will work as a financial auditor starting in 2027 at a public accounting firm.</li>
+      
+      <li><strong>Academic Background:</strong> My major is accounting. I originally thought I was going to do finance, but I found accounting to be right up my alley during my second year in college.</li>
+      
+      <li><strong>Primary Computer:</strong> Mac OS laptop.</li>
+      
+      <li><strong>Courses I’m Taking, &amp; Why:</strong>
+        <ol>
+          <li><strong>ITSC 1110 - Intro to Computer Science:</strong> I want to increase my computer literacy and learn how software engineers think, so I can become a more well-rounded financial auditor.</li>
+          <li><strong>ACCT 3350 - Introduction to Auditing:</strong> Required course that will give me a taste of what financial auditing actually looks like.</li>
+          <li><strong>ACCT 3330 - Managerial Accounting:</strong> Required course that will teach me the similarities and differences between internal and external accounting.</li>
+          <li><strong>MGMT 3280 - Strategic Management:</strong> Required capstone course that will further develop my teamwork skills before I enter the workforce.</li>
+        </ol>
+      </li>
+      
+      <li><strong>Funny/Interesting Item to Remember Me by:</strong> I have a twin (fraternal) brother.</li>
+      
+      <li><strong>I’d Also Like to Share:</strong> I like to read before bed.</li>
+    </ul>
+
+    <blockquote>
+      <p>"The future is not something we enter. It is something we create."</p>
+      <cite>— Leonard I. Sweet</cite>
+    </blockquote>
+  </section>
+  <p><br><br>My initial prompt:</p>
+  <p>"Make the following summary of me into a main element of a webpage with an initial summary and then each topic as a list item and the courses part of a numbered list within the bulleted list. Center the image caption under where the image will be and make it italic. Make my name divider animal an h3."<br><br> [Gave a copy of my intro]</p>
+  <p><br>Follow-up prompt: >>> Switched to Pro Mode 🚀</p>
+  <p>"I still don't see the the h3 tag for my name and my mascot, "Courageous Mink" to go in. I also don't see the img tag where my picture will go below the h3. Create these tags and fill with necessary content."</p>
+  <script>
+        
+        var onMousePress = function(e) {
+            var emoji = document.createElement("div");
+            emoji.innerHTML = "🌈";
+            document.body.appendChild(emoji);
+            emoji.style.top = e.clientY + "px";
+            emoji.style.left = e.clientX + "px";
+            emoji.style.position = "absolute";
+        }
+        document.addEventListener("click", onMousePress);
+
+    </script>
+</main>
 </body>
 <footer>
     <p><br><br>&copy; 2026 Chris McFarland</p>

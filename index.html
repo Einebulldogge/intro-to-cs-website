@@ -17,7 +17,9 @@
 </head>
 <body>
     <header>
-        <a target= "_blank" href="itsc1110/contract.html"><img id="contract-pic" src="Images/gavel.webp" width="200"></a>
+        <button id="contract-button">
+            <a target= "_blank" href="itsc1110/contract.html">Contract</a>
+        </button>
         <h1><br>Chris McFarland's Student Site</h1>
     </header>
     <main>
@@ -31,6 +33,19 @@
             takes him!<br><br>
         </p>
         <h3><a href="itsc1110/">Access my course page here ITSC 1110</a></h3>
+        <script>
+        
+        var onMousePress = function(e) {
+            var emoji = document.createElement("div");
+            emoji.innerHTML = "🌈";
+            document.body.appendChild(emoji);
+            emoji.style.top = e.clientY + "px";
+            emoji.style.left = e.clientX + "px";
+            emoji.style.position = "absolute";
+        }
+        document.addEventListener("click", onMousePress);
+
+    </script>
     </main>
     <footer>
         <p><br><br>Color pallette provided by Coolors.co</p>
